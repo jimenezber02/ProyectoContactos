@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+	/*background: url("../images/fondo6.jpg") no-repeat fixed center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    background-color: #e9eaed;
+}
+
+.estiloLetraDiv {
+	font-size: 15px;
+	color: #3366FF;
+}
+
+.formularioDiv {
+	margin-top: 150px;
+}
+
+.formulario-registrar {
+	margin-top: 50px;
+}
+
+.formTop {
+	background-color: #fff;
+	padding: 0 25px 15px 25px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.form-titulo {
+	width: 75%;
+  	padding-top: 20px;
+}
+
+.form-content {
+	background-color: rgba(0,61,245, 0.1);
+	padding: 25px 25px 30px 25px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;	
+}
+
+.nav-estilo {
+	background-color: #3B5999;
+	border-color: #3B5999;
+}
+
+.nav-logo a{
+	color: #fff !important;
+	font-weight: 700;
+}
+
+.margen-superior {
+	margin-top: 75px;
+}
+
+.separacion-superior {
+	margin-top: 20px;
+}
+
+.parrafo-estilo {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/*POR ID*/
+#nombre1, #nombre2, #apellido1, #apellido2{
+	width: 350px;
+}
+
+#direccion, #facultad, #escuela, #carrera {
+	width: 755px;
+}
+
+#identificacion {
+	width: 300px;
+}
+
+#formularioEstudiante {
+	background-color: rgba(0,61,245, 0.1);
+	padding: 15px;
+	border-radius: 5px; 
+	margin-top: 10px;
+}
+
+#ing {
+	float: right;
+	margin-top: 0px;
+	display: inline; 
+	font-size: 13px;
+	width: 120px;
+    background-color: #286090;
+    border-color: #286090;
+}
+
+#reg {
+	float: left;
+	margin-top: 0px;
+	display: inline; 
+	font-size: 13px;
+	width: 120px;
+    background-color: #5CB811;
+    border-color: #5CB811;
+}
+
+#can {
+	float: right;
+	margin-top: 0px;
+	display: inline; 
+	font-size: 13px;
+	width: 120px;
+    background-color: #DC143C;
+    border-color: #DC143C;
+}
+
+#nomb_usu
+{
+	color: white;
+	float: right;
+	height: 15px;
+	padding: 10px 10px;
+	font-size: 14px;
+	line-height: 10px;
+}
+
+.navbar-brand
+{
+	font-size: 14px;
+	float: right;
+}
