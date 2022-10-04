@@ -16,7 +16,7 @@
 		}
 
 		public function registrar($user,$pass){
-			$sentencia= "INSERT into usuario (nombreUser,contrasena) 
+			$sentencia= "INSERT into usuario (nombre_user,contrasena) 
 						values ('$user','$pass')";
 
 			return mysqli_query($this->conn,$sentencia);
@@ -39,7 +39,7 @@
 		}
 
 		public function busca_usuario($user,$pass){
-			$sentencia = "SELECT * FROM usuario WHERE (nombreUser='$user' AND contrasena = '$pass')";
+			$sentencia = "SELECT * FROM usuario WHERE (nombre_user='$user' AND contrasena = '$pass')";
 			//$sentencia1="SELECT * FROM $nombre_base. $nombre_tabla1 WHERE nombreUser  LIKE '$nombre_usu' ";
 			return mysqli_query($this->conn,$sentencia);
 		}

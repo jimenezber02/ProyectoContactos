@@ -19,7 +19,7 @@
 			<?php
 				if(count($contactos)){
 					foreach ($contactos["contactos"] as $key => $value) {
-						$data = $value['id']."||".$value['nombre']."||".$value['movil']."||".$value['correo']."||".$value['nombreFoto'];
+						$data = $value['id']."||".$value['nombre']."||".$value['movil']."||".$value['correo']."||".$value['nombre_foto'];
 			?>
 						<tr bgcolor="LightSkyBlue">
 							<td><center>
@@ -32,8 +32,8 @@
 								<center><?php echo($value['correo']);?></center>
 							</td>
 							<?php
-								if($value['nombreFoto'] != "No hay foto"){?>
-									<td><img style="height: 40px;width: 35px;" src="../img/fotoUSR/<?php echo($value['id']);?>/<?php echo($value['nombreFoto']);?>"></td>
+								if($value['nombre_foto'] != "No hay foto"){?>
+									<td><img style="height: 40px;width: 35px;" src="../img/fotoUSR/<?php echo($value['id']);?>/<?php echo($value['nombre_foto']);?>"></td>
 								<?php
 								}
 								else{

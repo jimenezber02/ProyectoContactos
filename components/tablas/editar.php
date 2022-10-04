@@ -24,7 +24,7 @@
 				{
 					foreach ($contactos['contactos'] as $key => $i) {
 						# code...
-						$datos=$i['id']."||".$i['nombre']."||".$i['movil']."||".$i['correo']."||".$i['nombreFoto'];
+						$datos=$i['id']."||".$i['nombre']."||".$i['movil']."||".$i['correo']."||".$i['nombre_foto'];
 						?>
 						<tr bgcolor="LightSkyBlue">
 							<td>
@@ -37,10 +37,10 @@
 								<center><?php echo($i['correo']); ?></center>
 							</td>
 							<?php
-								if($i['nombreFoto'] != "No hay foto"){?>
+								if($i['nombre_foto'] != "No hay foto"){?>
 									<td>
 										<img style="height: 40px;width: 35px;" 
-										src="../img/fotoUSR/<?php echo($i['id']);?>/<?php echo($i['nombreFoto']);?>">
+										src="../img/fotoUSR/<?php echo($i['id']);?>/<?php echo($i['nombre_foto']);?>">
 									</td>
 								<?php
 								}

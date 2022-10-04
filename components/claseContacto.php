@@ -30,7 +30,7 @@
 		}
 
 		function guardarContacto($datos){
-			$sentencia= "INSERT into contactos (nombre,movil,correo,nombreFoto) values (
+			$sentencia= "INSERT into contactos (nombre,movil,correo,nombre_foto) values (
 						'$datos[nombre]',
 						'$datos[movil]',
 						'$datos[correo]',
@@ -59,7 +59,7 @@
 			if(($datos['tipo_archivo']=="image/jpeg")||($datos['tipo_archivo']=="image/pjpeg")||($datos['tipo_archivo']=="image/jpg")){
 				if($datos['tamanio'] < 16000000)
 				{
-					$sentencia = "UPDATE contactos SET nombreFoto='$datos[nom_archivo]' WHERE id = '$datos[elId]' ";
+					$sentencia = "UPDATE contactos SET nombre_foto='$datos[nom_archivo]' WHERE id = '$datos[elId]' ";
 					if(mysqli_query($this->conn,$sentencia)){
 						//se mueve el archivo a la carpeta
 						move_uploaded_file($datos['name'],"../img/fotoUSR/$datos[elId]/".$datos['nom_archivo']);

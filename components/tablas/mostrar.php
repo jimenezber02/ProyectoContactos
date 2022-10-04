@@ -29,8 +29,8 @@
 							<td><?php echo($value['movil']); ?></td>
 							<td style="font-size: 10px;color:red;"><?php echo($value['correo']); ?></td>
 							<?php
-								if($value['nombreFoto'] != "No hay foto"){?>
-									<td><img style="height: 40px;width: 35px;" src="../img/fotoUSR/<?php echo($value['id']);?>/<?php echo($value['nombreFoto']);?>">
+								if($value['nombre_foto'] != "No hay foto"){?>
+									<td><img style="height: 40px;width: 35px;" src="../img/fotoUSR/<?php echo($value['id']);?>/<?php echo($value['nombre_foto']);?>">
 									</td>
 								<?php
 								}
