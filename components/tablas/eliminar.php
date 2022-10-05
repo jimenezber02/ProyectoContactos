@@ -4,10 +4,8 @@
 
 	$contactos['contactos'] = $obj->getContactos();
 ?>
-<center>
 
 		<h5>Eliminar Contactos</h5>
-		<center>
 		<table  class="table table-hover table-condensed table-bordered" bgcolor="BurlyWood">
 			<tr bgcolor="DodgerBlue">
 				<td>Nombre</td>
@@ -28,7 +26,7 @@
 							<td>
 								<center><?php echo($value['movil']);?></center>
 							</td>
-							<td style="font-size: 10px;color:red;">
+							<td style="font-size: 1.2rem;color:red;">
 								<center><?php echo($value['correo']);?></center>
 							</td>
 							<?php
@@ -37,12 +35,12 @@
 								<?php
 								}
 								else{
-									echo('<td>Sin foto</td>');
+									echo "<td><img style='height: 40px;width: 35px;' src='../img/default-logo.jpg'></td>";
 								}
 								?>
 							<td>
 								<center>
-									<button class="btn btn-danger fa fa-trash" data-toggle="modal" data-target="#modalEliminar" onclick="eliminaDatos('<?php echo($data); ?>');">
+									<button class="btn btn-danger bi bi-trash-fill" data-bs-toggle="modal" data-bs-target="#modalEliminar" onclick="eliminaDatos('<?php echo($data); ?>');">
 									</button>
 								</center>
 							</td>
@@ -52,6 +50,3 @@
 				}//cierra if
 			?>
 		</table>
-	</center>
-
-</center>

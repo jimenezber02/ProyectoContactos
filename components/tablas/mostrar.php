@@ -4,13 +4,10 @@
 
 	$contactos["contactos"] = $cont->getContactos();
 ?>
-<center>
 
 		<h5>Datos de Contactos</h5>
-		<center>
 		<table  class="table table-hover table-condensed table-bordered" bgcolor="Gold">
 			<tr bgcolor="DodgerBlue">
-				<td>ID</td>
 				<td>Nombre</td>
 				<td>Movil</td>
 				<td>Correo</td>
@@ -23,11 +20,9 @@
 						# code...
 			?>
 						<tr bgcolor="LightSkyBlue">
-							
-							<td><?php echo($value['id']);?></td>
 							<td><?php echo($value['nombre']); ?></td>
 							<td><?php echo($value['movil']); ?></td>
-							<td style="font-size: 10px;color:red;"><?php echo($value['correo']); ?></td>
+							<td style="font-size: 1.2rem;color:red;"><?php echo($value['correo']); ?></td>
 							<?php
 								if($value['nombre_foto'] != "No hay foto"){?>
 									<td><img style="height: 40px;width: 35px;" src="../img/fotoUSR/<?php echo($value['id']);?>/<?php echo($value['nombre_foto']);?>">
@@ -35,7 +30,7 @@
 								<?php
 								}
 								else{
-									echo('<td>Sin foto</td>');
+									echo "<td><img style='height: 40px;width: 35px;' src='../img/default-logo.jpg'></td>";
 								}
 								?>
 							
@@ -46,6 +41,3 @@
 			?>
 			
 		</table>
-	</center>
-
-</center>

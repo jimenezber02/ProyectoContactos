@@ -8,13 +8,13 @@ body
 {
 	width: 100%;
 	margin: 0 auto;
-	border: border: 1px solid red;
 	display: flex;
 	flex-direction: column;
+	padding: 0 50px;
 }
 	#caja1 /* Encabezado */
 	{
-		border: 1px solid blue;
+		border: 1px solid rgb(26, 26, 27);
 		background: url("../img/fondoTi.jpg");
 		
 		border-bottom-left-radius: 45px;
@@ -27,7 +27,7 @@ body
 			color: Gold;
 			text-shadow:4px 0 0 black, 
 			-2px 0 0 white, 0 4px 0 Crimson, 0 -2px 0 Crimson, 4px 1px Crimson, -1px -1px 0 Crimson, 1px -1px 0 Crimson, -1px 4px 0 Crimson;
-
+			padding: 40px 0;
 		}
 
 	section{ /* Contiene a los contenidos de la página */
@@ -36,15 +36,18 @@ body
 		background-color: rgb(0,0,0,0.5);
 		padding: 10px;
 		justify-content: center;
+		
+		border-radius: 20px 20px 0 0;
 	}
 	.articulos{ /*  Contiene a las tres cajas del medio: 
 					->menú
 					->caja para las tablas
 					->caja para las imágenes dinámicas
-				*/;
+				*/
 		display: flex;
 		flex-direction: row;
 		width: 100%;
+		padding: 20px 0;
 		justify-content: center;
 	}
 		
@@ -54,6 +57,9 @@ body
 			border-bottom-right-radius: 25px;
 			background-color: #00FF00;
 			border: 3px solid #4B0082;
+			flex: 1 1 30%;
+			display: flex;
+			justify-content: center;
 		}
 			.menu{
 				display: flex;
@@ -68,7 +74,7 @@ body
 
 			    padding: 0.5em;
 			    margin-left: 0.5em;
-
+				width: 80%;
 			    left: 0em;
 			    
 			    align-content: center;
@@ -108,9 +114,17 @@ body
 
 			background-color: #E6E6FA;
 			border: 1px solid black;
+			flex: 1 1 50%;
+			display: flex;
+			/*min-height: 400px;*/
+			align-items: center;
+			flex-direction: column;
+			padding: 10px 5px;
+			margin: 0 5px 0 5px;
 		}
 		#contenido table{
 			width: 100%;
+			font-size: 1.2rem;
 		}
 
 		#caja4 /* Contiene a las imágenes dinámicas */
@@ -119,27 +133,25 @@ body
 			border-bottom-left-radius: 25px;
 			background-color: #00FF00;
 			border: 3px solid #4B0082;
+			flex: 1 1 30%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
 		}
 			#foto
 			{
-				border-top-right-radius: 15px;
-				border-bottom-right-radius: 15px;
-				border-top-left-radius: 15px;
-				border-bottom-left-radius: 15px;
+				width: 100%;
+				height: 340px;
 			}
 
 		#caja5 /*Footer */
 		{
-			border-top-right-radius: 15px;
-			border-top-left-radius: 15px;
-			/*margin-top: auto;
-			margin-left:  16.3%;*/
 			background: url("../img/footerimg.jpg");
 			background-repeat: no-repeat;
-			background-size: 100% 100%;
-			border: 1px solid blue;
-			height: 300px;
+			background-size: cover;
 			position: relative;
+			padding: 40px 0;
 		}
 		#caja5 img{
 			width: 100%;

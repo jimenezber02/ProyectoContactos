@@ -21,20 +21,29 @@
 
 	<title>Pagina principal</title>
 	<link rel="stylesheet" type="text/css" href="../css/pagina.css?2021ffh5h" >
-    
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+	<!--<link rel="stylesheet" type="text/css" href="../css/bootstrap-4.3.1-dist/css/bootstrap.css">-->
 	<!--<link rel="stylesheet" type="text/css" href="../css/formulario.css">-->
     <link type="text/css" href="../alertifyjs/css/alertify.min.css" rel="stylesheet">
     <link type="text/css" href="../alertifyjs/css/themes/default.min.css" rel="stylesheet">
-	<link href="../css/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet"/>
+	<!--<link href="../css/fontawesome-free-5.8.2-web/css/all.css" rel="stylesheet"/>-->
 
-	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<!--<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
     
 	<script type="text/javascript" src="../js/principal.js?12ffhf521"></script>
     <!--<script type="text/javascript" src="../js/valida_contactos.js"></script>-->
 	<!--<script type="text/javascript" src="../JS/popper.min.js"></script>-->
     <script type="text/javascript" src="../alertifyjs/alertify.min.js"></script>
-	<script type="text/javascript" src="../css/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+	<!--<script type="text/javascript" src="../css/bootstrap-4.3.1-dist/js/bootstrap.js"></script>-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 
 </head>
 
@@ -50,7 +59,7 @@
                     $resultado=mysqli_query($conn,$sentencia);
                     while($i=mysqli_fetch_array($resultado))
                     {
-                        echo("<h5 style='color: white;'>@".$i['nombreUser']."</h5>");
+                        echo("<h5 style='color: white;'>@".$i['nombre_user']."</h5>");
                     }
                 ?><!--Cierra php-->
             </center>
@@ -64,7 +73,7 @@
                     <!--Menú de navegación-->
                     <ul class="menu">
                         <li>
-                            <a data-toggle="modal" data-target="#modalAgrgar" href="#">
+                            <a data-bs-toggle="modal" data-bs-target="#modalAgrgar" href="#">
                                 <center>Registrar contactos</center>
                             </a>
                         </li>
@@ -80,9 +89,7 @@
                 </div>
 
                 <div id="caja4" class="article">
-                    <center>
-                        <img id="foto" src="../img/guitarra1.jpg" style="height: 200px; width: 170px;">
-                    </center>
+                    <img id="foto" src="../img/guitarra1.jpg">
                 </div>
             </div>
              
@@ -110,7 +117,7 @@
                     <div class="modal-dialog modal-sm" role="document"> 
                         <div class="modal-content">
                             <div id="modal-header">
-                                <button class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <button class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
                                     <center><h3 class="modal-tittle">Edici&oacute;n de datoss</h3></center>
                                     <div class="modal-body">
                                     <form method="POST" action="#" id="form-e" enctype="multipart/form-data">
@@ -149,7 +156,7 @@
                     <div class="modal-dialog modal-sm" role="document"> 
                         <div class="modal-content">
                             <div id="modal-header">
-                                <button class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <button class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
                                     <center><h3 class="modal-tittle">A&ntilde;adir contacto</h3></center>
                                     <div class="modal-body">
                                     <form method="POST" action="#" id="form-a" enctype="multipart/form-data">
@@ -168,7 +175,7 @@
                                         <input type="file" name="imagen" id="imagen" class="form-control-file">
                                     </div>
                                     <div class="modal-footer">
-                                        <button class="btn btn-danger" class="close" data-dismiss="modal" id="cerrarAD">Cerrar</button>
+                                        <button class="btn btn-danger" class="close" data-bs-dismiss="modal" id="cerrarAD">Cerrar</button>
                                         <button  id="guardaC" class="btn btn-primary" type="submit">Guardar</button>
                                     </div>
                                     </form>
@@ -210,7 +217,7 @@
                                         
                                     </div>
                                     <div class="modal-footer">
-                                        <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        <button class="btn btn-default" data-bs-dismiss="modal">Cerrar</button>
                                         <button class="btn btn-danger" id="EliminarD">Eliminar</button>
                                     </div>
                             </div>
