@@ -1,10 +1,11 @@
 <?php
 	include("../claseContacto.php");
+	require_once('../sesion/sesion.php');
+
 	$cont = new claseContacto();
 
-	$contactos["contactos"] = $cont->getContactos();
+	$contactos["contactos"] = $cont->getContactos($_SESSION['id_user']);
 ?>
-
 		<h5>Datos de Contactos</h5>
 		<table  class="table table-hover table-condensed table-bordered" bgcolor="Gold">
 			<tr bgcolor="DodgerBlue">

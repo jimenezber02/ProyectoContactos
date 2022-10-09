@@ -12,6 +12,9 @@ CREATE TABLE IF NOT EXISTS proyectocontactos.contactos(
 	movil varchar(18) not null,
 	correo varchar(30) not null,
 	nombre_foto varchar(50) not null,
+	id_usuario int(20) NOT NULL,
+	CONSTRAINT usuario_id FOREIGN KEY(id_usuario) REFERENCES usuario(id) ON DELETE CASCADE,
 
 	PRIMARY KEY(id) 
-);
+)ENGINE=InnoDb;
+

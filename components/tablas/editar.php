@@ -1,10 +1,11 @@
 <?php
 	include("../claseContacto.php");
+	require_once('../sesion/sesion.php');
 	//Objeto de la clase contacto
 	$obj = new claseContacto();
 
 	//Otiene todos los contactos
-	$contactos['contactos'] = $obj->getContactos(); 
+	$contactos['contactos'] = $obj->getContactos($_SESSION['id_user']); 
 ?>
 <div class="row">
 	<div class="col-sm-12">

@@ -19,8 +19,8 @@
 		}
 
 		//Retorna todos los contactos
-		function getContactos(){
-			$sentencia = "SELECT * FROM contactos ORDER BY id asc";
+		function getContactos($id_user){
+			$sentencia = "SELECT * FROM contactos WHERE id_usuario=$id_user ORDER BY id asc";
 			$resultado = mysqli_query($this->conn,$sentencia);
 			while ($i = mysqli_fetch_array($resultado)) {
 				# code...

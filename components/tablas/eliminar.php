@@ -1,8 +1,9 @@
 <?php
 	include("../claseContacto.php");
+	require_once('../sesion/sesion.php');
 	$obj = new claseContacto();
 
-	$contactos['contactos'] = $obj->getContactos();
+	$contactos['contactos'] = $obj->getContactos($_SESSION['id_user']);
 ?>
 
 		<h5>Eliminar Contactos</h5>

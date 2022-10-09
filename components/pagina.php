@@ -66,7 +66,7 @@
 			<center><a style="color: white; text-decoration: none;" href="sesion/Salir.php">Cerrar Sesion</a>
 			<i class="fa fa-user"></i></center>
 		</div>
-
+        
 		<section>
             <div class="articulos">
                 <div id="caja2" class="article">
